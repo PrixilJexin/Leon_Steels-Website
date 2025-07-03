@@ -1,0 +1,357 @@
+body {
+  margin: -60px;
+  font-family: 'Michroma', sans-serif;
+  background: #111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* About Section Styling */
+.about-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  overflow: hidden;
+  padding: 40px 20px;
+  gap: 40px;
+  margin-top: -400px;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.about-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  flex: 1;
+  text-align: left;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.about-section h1 {
+  font-size: 2rem;
+  color: #f5b301;
+  margin-bottom: 20px;
+  transition: color 0.5s ease;
+  text-align: left;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd;
+  transition: color 0.5s ease;
+  text-align: left;
+}
+
+.about-section:hover p {
+  color: #f0f0f0;
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-overlay {
+    text-align: center;
+  }
+
+  .about-section h1,
+  .about-section p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section h1 {
+    font-size: 1.6rem;
+  }
+  .about-section p {
+    font-size: 1rem;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Michroma', sans-serif;
+  background: #111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Section styling */
+.carousel-section {
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+}
+
+.carousel-section h2 {
+  color: #f5b301; /* brand yellow */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Track styling for sliding effect */
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Individual card with background image */
+.carousel-card {
+  position: relative;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 60px 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Gradient overlay for readability */
+.carousel-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  z-index: 0;
+  transition: background 0.5s ease;
+}
+
+/* Hover effect */
+.carousel-card:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+.carousel-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Heading inside card */
+.carousel-card h3 {
+  font-size: 1.8rem;
+  color: #f5b301;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.carousel-card:hover h3 {
+  color: #ffffff;
+}
+
+/* Paragraph and list styling */
+.carousel-card p,
+.carousel-card li,
+.carousel-card strong {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.carousel-card:hover p,
+.carousel-card:hover li,
+.carousel-card:hover strong {
+  color: #f0f0f0;
+}
+
+/* List inside card */
+.carousel-card ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+  padding-left: 20px;
+}
+
+.carousel-card li {
+  margin-bottom: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .carousel-card {
+    padding: 50px 15px;
+  }
+  .carousel-section h2 {
+    font-size: 1.7rem;
+  }
+  .carousel-card h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-card {
+    padding: 40px 10px;
+  }
+  .carousel-section h2 {
+    font-size: 1.4rem;
+  }
+  .carousel-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Optional: Fade-in on page load for hero animation feel */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+} 
+
+/* CTA Section Styling */
+.cta-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  overflow: hidden;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  flex: 1;
+  text-align: left;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  color: #f5b301;
+  margin-bottom: 20px;
+  transition: color 0.5s ease;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 20px;
+  transition: color 0.5s ease;
+}
+
+.cta-content:hover p {
+  color: #f0f0f0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f5b301;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+.cta-image {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .cta-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .cta-content {
+    text-align: center;
+  }
+
+  .cta-content h2,
+  .cta-content p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+  .cta-content p {
+    font-size: 1rem;
+  }
+}

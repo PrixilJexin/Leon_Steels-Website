@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #111111;
+    background-color: #ffffff;
   }
 
 /* === NAVBAR BASE === */
@@ -126,7 +126,7 @@
 .hamburger {
   display: none;
   font-size: 1.8rem;
-  color: #fff;
+  color: #0a0a0a;
   cursor: pointer;
   user-select: none;
 }
@@ -353,7 +353,7 @@
   justify-content: center;
   align-items: center;    
   background: rgba(67, 66, 66, 0.199);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(0px);
   padding: 2rem;
   z-index: 2;
   overflow: hidden;
@@ -659,6 +659,7 @@
   text-align: center;
   overflow: hidden;
   position: relative;
+  margin-top: 70px;
 }
 
 .usp-title {
@@ -705,12 +706,23 @@
   line-height: 1.6;
 }
 
+.leon-unique {
+  background: url('../images/Gemini_Generated_Image_ywnhbcywnhbcywnh.png') center center / cover no-repeat;
+  color: #fff; /* Adjust text color if needed for contrast */
+  position: relative;
+  z-index: 1;
+}
+
+
+
 /* Trusted By */
 .trustedby-section {
   text-align: center;
-  background: #ffffff;
+  background: #6a676790;
   border-radius: 20px;
   padding: 3rem 2rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .trustedby-title {
