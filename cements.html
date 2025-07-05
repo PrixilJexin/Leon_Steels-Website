@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Split Header - LEON STEELS</title>
+  <link rel="stylesheet" href="Css/home_page.css" />
+  <link rel="stylesheet" href="Css/cements.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div id="wrapper">
+
+<header class="navbar">
+  <div class="logo">Leon Steels</div>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="#">About Us</a>
+
+    <!-- Products Dropdown -->
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Products ▾</a>
+      <div class="dropdown-content">
+        <a href="tmt_bars.html">TMT Bars</a>
+        <a href="cements.html">Cement</a>
+        <a href="blue_sand.html">Blue Metal Aggregates</a>
+      </div>
+    </div>
+
+    <!-- Concrete Blocks Dropdown -->
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Concrete Blocks ▾</a>
+      <div class="dropdown-content">
+        <a href="#">Solid Blocks</a>
+        <a href="#">Hollow Blocks</a>
+        <a href="#">Column Blocks</a>
+        <a href="#">Precast Beams</a>
+      </div>
+    </div>
+
+    <a href="#">Brands We Supply</a>
+    <a href="#">Delivery Areas</a>
+    <a href="#">Request a Quote</a>
+    <a href="#">Contact Us</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</header>
+
+<div id="content">
+
+<section class="cement-section">
+  <div class="cement-header">
+    <h2>Premium Cement Solutions for Every Project</h2>
+    <p>We supply all grades of cement from India’s most trusted brands, ensuring strength, durability, and unmatched quality for every build.</p>
+  </div>
+
+  <div class="cement-grid">
+
+    <div class="cement-card">
+      <div class="cement-image">
+        <img src="images/Cements/ultratech-concrete-cement-500x500.webp" alt="UltraTech Cement">
+      </div>
+      <div class="cement-content">
+        <h3>UltraTech Cement</h3>
+        <p>Consistent quality, high compressive strength — perfect for projects demanding top performance and fast setting.</p>
+      </div>
+    </div>
+
+    <div class="cement-card">
+      <div class="cement-image">
+        <img src="images/Cements/dalmia1.png" alt="Dalmia Cement">
+      </div>
+      <div class="cement-content">
+        <h3>Dalmia Cement</h3>
+        <p>Eco-friendly cement with a low-carbon footprint. Strength and sustainability combined for modern builds.</p>
+      </div>
+    </div>
+
+    <div class="cement-card">
+      <div class="cement-image">
+        <img src="images/Cements/coromandel.jpg" alt="Coromandel Cement">
+      </div>
+      <div class="cement-content">
+        <h3>Coromandel Cement</h3>
+        <p>Widely trusted for residential and commercial constructions. Consistent results you can rely on.</p>
+      </div>
+    </div>
+
+    <div class="cement-card">
+      <div class="cement-image">
+        <img src="images/Cements/chettinad.webp" alt="Chettinad Cement">
+      </div>
+      <div class="cement-content">
+        <h3>Chettinad Cement</h3>
+        <p>Excellent workability and smooth finish — the best choice for plastering and final touches.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cement-cta">
+    <h3>Get a Quote Today</h3>
+    <p>Call us at <strong>🇮🇳 8925681234</strong> or     <strong>🇮🇳 9176997363</strong> or click below for personalized assistance and transparent pricing.</p>
+    <a href="#contact" class="cta-button">Contact Us Now</a>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  // GSAP Fade In Animations
+  gsap.from(".cement-header h2", { opacity: 0, y: -50, duration: 1 });
+  gsap.from(".cement-header p", { opacity: 0, y: 30, delay: 0.5, duration: 1 });
+
+  gsap.from(".cement-card", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.3,
+    delay: 0.8
+  });
+
+  gsap.from(".cement-cta", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    delay: 1.2
+  });
+</script>
+
+
+</div>
+</div>
+
+
+
+
+<!-- GSAP + ScrollTrigger + ScrollSmoother -->
+<script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=v3.11.3"></script>
+<script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+<script src="https://assets.codepen.io/16327/ScrollSmoother.min.js?v=3.10.0e"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<!-- Your Scroll Animations -->
+<script type="module" src="Java-script/hero_section.js"></script>
+<script type="module" src="Java-script/fade_title.js"></script>
+<script type="module" src="Java-script/navbar.js"></script>
+<script type="module" src="Java-script/about_leon.js"></script>
+<script type="module" src="Java-script/brand_logos.js"></script>
+<script type="module" src="Java-script/tmt_bars.js"></script>
+</body>
+</html>
