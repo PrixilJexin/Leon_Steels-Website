@@ -2,13 +2,19 @@
     box-sizing: border-box;
   }
 
-  body {
-    overscroll-behavior: none;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: #ffffff;
-  }
+body {
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #000000, #535050);
+
+  background-blend-mode: screen;
+  background-size: cover;
+  font-family: 'Michroma', sans-serif;
+}
+
+
 
 /* === NAVBAR BASE === */
 .navbar {
@@ -199,7 +205,7 @@
   .hero-title {
     font-family: 'Michroma', sans-serif;
     font-size: 4rem;
-    color: white;
+    color: rgb(255, 255, 255);
     position: absolute;
     left: 6.5%;
     top: 32%;
@@ -336,6 +342,7 @@
 
   .spacer {
     height: 175vh;
+    
   }
 
   .scroll {
@@ -352,8 +359,7 @@
   display: flex;
   justify-content: center;
   align-items: center;    
-  background: rgba(67, 66, 66, 0.199);
-  backdrop-filter: blur(0px);
+
   padding: 2rem;
   z-index: 2;
   overflow: hidden;
@@ -384,7 +390,7 @@
 .about-container .closing {
   font-size: 1rem;
   line-height: 1.6;
-  color: #ddd;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
@@ -718,7 +724,7 @@
 /* Trusted By */
 .trustedby-section {
   text-align: center;
-  background: #6a676790;
+  background: #00000090;
   border-radius: 20px;
   padding: 3rem 2rem;
   margin-top: 15px;
@@ -728,13 +734,13 @@
 .trustedby-title {
   font-family: 'Michroma', sans-serif;
   font-size: 2.2rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .trustedby-text {
   font-size: 1.15rem;
-  color: #555;
+  color: #ffffff;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.7;
