@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="Css/aboutus.css" />
   <link rel="stylesheet" href="Css/footer.css" />
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
 </head>
-<body>
 
 <div id="wrapper">
 
@@ -22,9 +23,9 @@
     <div class="dropdown">
       <a href="#" class="dropbtn">Products ▾</a>
       <div class="dropdown-content">
-        <a href="#">TMT Bars</a>
-        <a href="#">Cement</a>
-        <a href="#">Blue Metal Aggregates</a>
+        <a href="tmt_bars.html">TMT Bars</a>
+        <a href="cements.html">Cement</a>
+        <a href="blue_sand.html">Blue Metal Aggregates</a>
       </div>
     </div>
 
@@ -112,6 +113,16 @@
   </div>
 </section>
 
+<section class="leon-about-section">
+  <div class="leon-about-overlay">
+    <h2>About Leon Steels</h2>
+    <p>
+      Leon Steels Private Limited, founded by Lourdes Monica with guidance from Sir Soris Barnapas, brings over a decade of entrepreneurial experience to the construction sector. Focused on distributing high-quality TMT rebars, cement, and cement products, Leon Steels partners with leading brands like ARS, Kamatchi, and TATA Tiscon to deliver reliable materials at competitive prices. The company actively engages with masons and industry influencers to address on-ground needs while supporting dealers and retailers in a competitive market. Operating from a large facility in Chengalpattu, Leon Steels has achieved significant growth, expanding its reach to meet the evolving demands of Chennai’s construction industry while maintaining strong partnerships and service excellence.
+    </p>
+  </div>
+</section>
+
+
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-logo">
@@ -161,6 +172,25 @@
 <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
 <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js?v=3.10.0e"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '/assets/loader.json' // adjust path if needed
+  });
+
+  window.addEventListener('load', function () {
+    const loader = document.getElementById('lottie-loader');
+    loader.classList.add('hide-loader');
+    setTimeout(() => loader.remove(), 2000); // cleanup
+  });
+});
+</script>
+
 
 <!-- Your Scroll Animations -->
 <script type="module" src="Java-script/hero_section.js"></script>

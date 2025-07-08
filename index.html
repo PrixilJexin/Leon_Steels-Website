@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 <div id="wrapper">
 
 <header class="navbar">
@@ -257,6 +258,27 @@
 <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
 <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js?v=3.10.0e"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '/assets/loader.json' // adjust to your correct path
+  });
+
+  window.addEventListener('load', function () {
+    const loader = document.getElementById('lottie-loader');
+    loader.classList.add('fade-out');
+    setTimeout(() => {
+      loader.remove(); // clean up DOM
+    }, 600); // match CSS transition duration
+  });
+});
+</script>
+
 
 <!-- Your Scroll Animations -->
 <script type="module" src="Java-script/hero_section.js"></script>

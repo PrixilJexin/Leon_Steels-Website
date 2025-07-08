@@ -1,9 +1,19 @@
-body {
-  margin: -60px;
+/* Reset and Base Styling */
+html, body {
+  height: 80%;
+  margin: 0;
+  padding: 0;
   font-family: 'Michroma', sans-serif;
   background: #111;
   color: #fff;
   overflow-x: hidden;
+
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
 }
 
 /* About Section Styling */
@@ -18,9 +28,9 @@ body {
   background-repeat: no-repeat;
   color: #fff;
   overflow: hidden;
-  padding: 40px 20px;
+  padding: 10px 20px;
   gap: 40px;
-  margin-top: -400px;
+  margin-top: -200px;
 }
 
 .about-section::before {
@@ -79,11 +89,9 @@ body {
     flex-direction: column;
     text-align: center;
   }
-
   .about-overlay {
     text-align: center;
   }
-
   .about-section h1,
   .about-section p {
     text-align: center;
@@ -99,42 +107,31 @@ body {
   }
 }
 
-body {
-  margin: 0;
-  font-family: 'Michroma', sans-serif;
-  background: #111;
-  color: #fff;
-  overflow-x: hidden;
-}
-
-/* Section styling */
+/* Carousel Section Styling */
 .carousel-section {
   width: 100%;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #111, #1a1a1a);
 }
 
 .carousel-section h2 {
-  color: #f5b301; /* brand yellow */
+  color: #f5b301;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-/* Carousel container */
 .carousel-container {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-/* Track styling for sliding effect */
 .carousel-track {
   display: flex;
   transition: transform 0.8s ease-in-out;
 }
 
-/* Individual card with background image */
 .carousel-card {
   position: relative;
   min-width: 100%;
@@ -151,7 +148,6 @@ body {
   transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-/* Gradient overlay for readability */
 .carousel-card::before {
   content: "";
   position: absolute;
@@ -161,7 +157,6 @@ body {
   transition: background 0.5s ease;
 }
 
-/* Hover effect */
 .carousel-card:hover {
   transform: scale(1.03);
   filter: brightness(1.1);
@@ -172,7 +167,6 @@ body {
   z-index: 1;
 }
 
-/* Heading inside card */
 .carousel-card h3 {
   font-size: 1.8rem;
   color: #f5b301;
@@ -184,7 +178,6 @@ body {
   color: #ffffff;
 }
 
-/* Paragraph and list styling */
 .carousel-card p,
 .carousel-card li,
 .carousel-card strong {
@@ -200,7 +193,6 @@ body {
   color: #f0f0f0;
 }
 
-/* List inside card */
 .carousel-card ul {
   text-align: left;
   max-width: 600px;
@@ -212,7 +204,6 @@ body {
   margin-bottom: 6px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .carousel-card {
     padding: 50px 15px;
@@ -237,7 +228,7 @@ body {
   }
 }
 
-/* Optional: Fade-in on page load for hero animation feel */
+/* Fade-in Utility */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -247,7 +238,7 @@ body {
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
-} 
+}
 
 /* CTA Section Styling */
 .cta-section {
@@ -260,7 +251,7 @@ body {
   background-position: center;
   color: #fff;
   overflow: hidden;
-  padding: 40px 20px;
+  padding: 80px 20px;
   gap: 40px;
 }
 
@@ -330,17 +321,14 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive adjustments */
 @media (max-width: 900px) {
   .cta-section {
     flex-direction: column-reverse;
     text-align: center;
   }
-
   .cta-content {
     text-align: center;
   }
-
   .cta-content h2,
   .cta-content p {
     text-align: center;
@@ -354,4 +342,96 @@ body {
   .cta-content p {
     font-size: 1rem;
   }
+}
+
+/* Footer Styling */
+footer {
+  background: #000;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+.leon-about-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #111, #ffffff, #f5b301);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  font-family: 'Michroma', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.leon-about-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+.leon-about-overlay h2 {
+  font-size: 2rem;
+  color: #ffd900;
+  margin-bottom: 20px;
+}
+
+.leon-about-overlay p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .leon-about-section {
+    padding: 60px 15px;
+  }
+  .leon-about-overlay h2 {
+    font-size: 1.6rem;
+  }
+  .leon-about-overlay p {
+    font-size: 0.95rem;
+  }
+}
+
+#lottie-loader {
+  position: fixed;
+  inset: 0;
+  background: #111; /* or brand dark shade */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+#lottie-animation {
+  width: 200px;
+  height: 200px;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+#lottie-loader.fade-out {
+  opacity: 0;
+  pointer-events: none;
 }
