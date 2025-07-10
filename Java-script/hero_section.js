@@ -15,7 +15,7 @@ smoother.effects(".hero__image-cont", {
 
 gsap.to(".anim-swipe", {
  yPercent: 300,
- delay: 0.2,
+ delay: 0.5,
  duration: 3,
  stagger: {
   from: "random",

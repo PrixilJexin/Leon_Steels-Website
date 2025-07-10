@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #000000, #535050);
+  background: linear-gradient(to bottom, #ffffff, #04546c);
 
   background-blend-mode: screen;
   background-size: cover;
@@ -67,13 +67,13 @@ body {
 
 .nav-links a,
 .dropbtn {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   position: relative;
   padding: 0.4rem 0; /* reduced */
   transition: color 0.3s ease;
   cursor: pointer;
-  font-size: 0.85rem; /* reduced from 0.95rem */
+  font-size: 0.95rem; /* reduced from 0.95rem */
 }
 
 .nav-links a:hover,
@@ -91,7 +91,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgba(20, 20, 20, 0.95);
+  background: rgba(255, 255, 255, 0.393);
   backdrop-filter: blur(10px);
   min-width: 180px;
   flex-direction: column;
@@ -227,7 +227,7 @@ body {
   .hero-title {
     font-family: 'Michroma', sans-serif;
     font-size: 4rem;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     position: absolute;
     left: 6.5%;
     top: 32%;
@@ -395,7 +395,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   opacity: 0; /* for GSAP animation */
   transform: translateY(50px);
-  background: rgba(20, 20, 20, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 2rem;
 }
@@ -801,10 +801,11 @@ body {
   font-weight: bold;
   font-size: 1rem;
   transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Michroma', sans-serif;
 }
 
 .cta-button:hover {
-  background: #e0a800;
+  background: #ffffff;
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
 }
