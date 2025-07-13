@@ -1,39 +1,44 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+(function () {
+  const isAnimationOk = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+  const scrub = true; // Set to false if you want non-scrubbing animations
 
-// create the smooth scroller FIRST!
-const smoother = ScrollSmoother.create({
- wrapper: "#wrapper",
- content: "#content",
- smooth: 2,
- speed: 3,
- effects: true
-});
+  if (isAnimationOk) {
+    setupAnimations();
+  }
 
-smoother.effects(".hero__image-cont", {
- speed: () => gsap.utils.random(0.55, 0.85, 0.05)
-});
+  function setupAnimations() {
+    gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".anim-swipe", {
- yPercent: 300,
- delay: 0.5,
- duration: 3,
- stagger: {
-  from: "random",
-  each: 0.1
- },
- ease: "sine.out"
-});
+    // Keyhole scroll animation
+    gsap.from(".keyhole", {
+      "clip-path": "polygon(0% 0%, 0% 100%, 50% 100%, 50% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%)",
+      scrollTrigger: {
+        trigger: ".section--primary",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: scrub,
+        markers: false
+      }
+    });
 
-gsap.to(".hero__image-cont > img", {
- scale: 1.5,
- xPercent: 20,
- scrollTrigger: {
-  trigger: ".hero",
-  start: "top top",
-  end: "+=3000px",
-  scrub: true
- }
-});
+    // Arrow fade on scroll
+    gsap.to(".arrow", {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".section--primary",
+        start: "top top",
+        end: "+=200",
+        scrub: scrub
+      }
+    });
 
-
-
+    // Slide-in hero content from the left on page load
+    gsap.from(".hero-content", {
+      x: "-100%",
+      opacity: 0,
+      duration: 1.2,
+      ease: "power3.out",
+      delay: 0.2
+    });
+  }
+})(); 

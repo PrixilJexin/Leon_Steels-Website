@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Split Header - LEON STEELS</title>
+  <title>LEON STEELS - Build With Purpose</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="Css/home_page.css" />
-    <link rel="stylesheet" href="Css/footer.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Css/footer.css" />
+  <link rel="stylesheet" href="Css/keyhole_hero.css" />
 </head>
 <body>
-
 
 <div id="wrapper">
 
@@ -37,75 +47,33 @@
   <div class="hamburger" id="hamburger">&#9776;</div>
 </header>
 
-<div id="content">
 
-<section class="hero">
-  <div class="hero__inner constrain">
+  <div id="content">
 
-    <h1 class="hero-title">LEON STEELS</h1>
-
-    <div class="hero-subtext">
-      <h2 class="tagline">Steel Strong. Cement Sure. Building with Purpose.</h2>
-      <p class="description">
-        Incorporated on <strong>29th October 2020</strong>, Leon Steels Private Limited supplies premium and local brands of
-        <strong>TMT bars</strong> and <strong>cements</strong> like ARS, Tata, UltraTech, and Dalmia. We've also expanded our product range to include
-        <strong>solid blocks</strong>, <strong>hollow blocks</strong>, <strong>AAC blocks</strong>, <strong>column blocks</strong>, and
-        <strong>precast beams</strong>, partnering with trusted manufacturers like Cristo Blocks to deliver exceptional structural quality for your projects.
-      </p>
-      <div class="cta-buttons">
+    <!-- ========== NEW HERO SECTION WITH KEYHOLE ANIMATION ========== -->  
+  <section class="hero-glass">
+<span class="keyhole" aria-hidden="true"></span>	
+<span class="arrow" aria-hidden="true">
+  <h1>Leon Steels</h1>
+  <p>Steel Strong. Cement Sure. Building with Purpose.</p>
+  <p>
+    Incorporated on <strong>29th October 2020</strong>, Leon Steels Private Limited supplies premium and local brands of
+    <strong>TMT bars</strong> and <strong>cements</strong> like ARS, Tata, UltraTech, and Dalmia. We've expanded to supply
+    <strong>solid blocks</strong>, <strong>hollow blocks</strong>, <strong>AAC blocks</strong>, <strong>column blocks</strong>,
+    and <strong>precast beams</strong> with trusted manufacturers for your projects.
+  </p>
+        <div class="cta-buttons">
         <a href="#quote" class="btn-primary">Get a Quote</a>
         <a href="#products" class="btn-secondary">Explore Products</a>
       </div>
-    </div>
-
-    <!-- Repeating image tiles -->
-    <div class="hero__image-cont">
-      <img src="images\c-dustin-91AQt9p4Mo8-unsplash.jpg" />
-      <div class="anim-swipe"></div>
-    </div>
-    <div class="hero__image-cont">
-      <img src="images\c-dustin-91AQt9p4Mo8-unsplash.jpg" />
-      <div class="anim-swipe"></div>
-    </div>
-    <div class="hero__image-cont">
-      <img src="images\c-dustin-91AQt9p4Mo8-unsplash.jpg" />
-      <div class="anim-swipe"></div>
-    </div>
-    <div class="hero__image-cont">
-      <img src="images\c-dustin-91AQt9p4Mo8-unsplash.jpg" />
-      <div class="anim-swipe"></div>
-    </div>
-    <div class="hero__image-cont">
-      <img src="images\c-dustin-91AQt9p4Mo8-unsplash.jpg" />
-      <div class="anim-swipe"></div>
-    </div>
-    <div class="hero__image-cont">
-      <img src="images\c-dustin-91AQt9p4Mo8-unsplash.jpg" />
-      <div class="anim-swipe"></div>
-    </div>
-
-  </div>
+</span>
+<main class="main">
+  <section class="section section--primary">
+    <figure class="hero-background">
+      <img src="images/c-dustin-91AQt9p4Mo8-unsplash.jpg" alt="Leon Steels Hero Image" />
+    </figure>
+  </section>
 </section>
-
-<section class="spacer" id="about-leon">
-  <div class="about-container">
-    <h2>Building Trust, Delivering Quality</h2>
-    <p class="intro">
-      At Leon Steels, every structure you build is not just concrete and steel – it’s your legacy, your dream, your safety.
-      We are committed to:
-    </p>
-    <ul class="about-points">
-      <li><strong>Premium Quality Materials:</strong> TMT Bars, Cements, and Concrete Products sourced from trusted brands.</li>
-      <li><strong>Honesty & Transparency:</strong> Fair weighing and clear pricing in every order you place.</li>
-      <li><strong>Reliable Delivery:</strong> Timely supply across all our service areas for your peace of mind.</li>
-      <li><strong>Technical Support:</strong> Guidance in selecting the right materials for your project needs.</li>
-    </ul>
-    <p class="closing">
-      Partner with Leon Steels and experience the commitment to quality that ensures your structures stand strong for generations.
-    </p>
-  </div>
-</section>
-
 <section class="trusted-brands" id="trusted-brands">
   <div class="trusted-brands-container">
     <h2 class="trusted-brands-title">Trusted Brands We Supply</h2>
@@ -122,7 +90,6 @@
     </div>
   </div>
 </section>
-
 <!-- ===================== WHY CHOOSE LEON STEELS ===================== -->
 <section class="why-choose" id="why-choose">
   <div class="why-choose-container">
@@ -235,44 +202,18 @@
 </div>
 </div>
 
+    </main>
+  </div>
 
+</div>
 
-<!-- Scroll Down Icon -->
-<img class="scroll" srcset="https://img.icons8.com/glyph-neue/128/ffffff/circled-down-2.png 2x" alt="scroll down" loading="lazy" />
+<!-- ========== SCRIPTS ========== -->
+<script src="Java-script/hero_section.js"></script>
+<script src="Java-script/fade_title.js"></script>
+<script src="Java-script/navbar.js"></script>
+<script src="Java-script/about_leon.js"></script>
+<script src="Java-script/brand_logos.js"></script>
+<script src="Java-script/more_about.js"></script>
 
-<!-- GSAP + ScrollTrigger + ScrollSmoother -->
-<script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=v3.11.3"></script>
-<script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
-<script src="https://assets.codepen.io/16327/ScrollSmoother.min.js?v=3.10.0e"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const animation = lottie.loadAnimation({
-    container: document.getElementById('lottie-animation'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: '/assets/loader.json' // adjust to your correct path
-  });
-
-  window.addEventListener('load', function () {
-    const loader = document.getElementById('lottie-loader');
-    loader.classList.add('fade-out');
-    setTimeout(() => {
-      loader.remove(); // clean up DOM
-    }, 600); // match CSS transition duration
-  });
-});
-</script>
-
-
-<!-- Your Scroll Animations -->
-<script type="module" src="Java-script/hero_section.js"></script>
-<script type="module" src="Java-script/fade_title.js"></script>
-<script type="module" src="Java-script/navbar.js"></script>
-<script type="module" src="Java-script/about_leon.js"></script>
-<script type="module" src="Java-script/brand_logos.js"></script>
-<script type="module" src="Java-script/more_about.js"></script>
 </body>
 </html>
