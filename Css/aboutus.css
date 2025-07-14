@@ -1,6 +1,6 @@
 /* Reset and Base Styling */
 html, body {
-  height: 80%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Michroma', sans-serif;
