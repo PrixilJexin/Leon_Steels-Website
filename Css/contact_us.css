@@ -1,18 +1,21 @@
 body {
   font-family: 'Michroma', sans-serif;
+  margin: 0;
+  padding: -500px;
+  background: #111; /* or your site background */
 }
 
 .contact-section {
-  background: rgba(20, 20, 20, 0.9);
+  background: linear-gradient(to bottom, #000000, #ffffff41);
   color: #ffffff;
-  padding: 80px 20px;
+  padding: 60px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact-container {
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   text-align: center;
 }
@@ -26,23 +29,20 @@ body {
 .contact-container p {
   font-size: 14px;
   color: #cccccc;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
+  align-items: center;
 }
 
-.form-grid input,
-textarea {
+form input,
+form textarea {
+  width: 100%;
+  max-width: 400px;
   padding: 15px;
   border: none;
   border-radius: 8px;
@@ -54,8 +54,8 @@ textarea {
   transition: background 0.3s;
 }
 
-.form-grid input:focus,
-textarea:focus {
+form input:focus,
+form textarea:focus {
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -67,7 +67,7 @@ button {
   background: #ffcc00;
   color: #000000;
   border: none;
-  padding: 15px;
+  padding: 15px 30px;
   border-radius: 8px;
   cursor: pointer;
   font-family: 'Michroma', sans-serif;
@@ -81,8 +81,12 @@ button:hover {
   transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
+/* Remove excess bottom space after footer */
+html, body {
+  height: 100%;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
