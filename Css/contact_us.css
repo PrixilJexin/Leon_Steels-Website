@@ -1,0 +1,88 @@
+body {
+  font-family: 'Michroma', sans-serif;
+}
+
+.contact-section {
+  background: rgba(20, 20, 20, 0.9);
+  color: #ffffff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.contact-container p {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.form-grid input,
+textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.form-grid input:focus,
+textarea:focus {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background: #ffcc00;
+  color: #000000;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Michroma', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #e6b800;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
