@@ -2,7 +2,8 @@ body {
   font-family: 'Michroma', sans-serif;
   margin: 0;
   padding: -500px;
-  background: #111; /* or your site background */
+  background: #111;
+  min-height: 100vh !important; /* or your site background */
 }
 
 .contact-section {

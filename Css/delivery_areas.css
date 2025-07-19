@@ -1,0 +1,111 @@
+.delivery-areas {
+  background: linear-gradient(135deg, #111111, #2c2c2c);
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Michroma', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery-container {
+  max-width: 900px;
+  text-align: center;
+}
+
+.delivery-title {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.delivery-intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #ddd;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 ratio */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
+}
+.delivery-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  font-family: 'Michroma', sans-serif;
+  color: #ddd;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.delivery-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.delivery-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  font-weight: bold;
+}
+.highlight-delivery {
+  background: linear-gradient(135deg, #ffd70020, #ffffff10);
+  border: 2px solid #ffd70050;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  font-family: 'Michroma', sans-serif;
+  color: #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-delivery:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.2);
+}
+
+.highlight-title {
+  font-size: 1.8rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.highlight-delivery p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.highlight-delivery strong {
+  color: #ffd700;
+  font-weight: 600;
+}
