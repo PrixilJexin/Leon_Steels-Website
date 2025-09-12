@@ -2,13 +2,13 @@ body {
   font-family: 'Michroma', sans-serif;
   margin: 0;
   padding: -500px;
-  background: #111;
+  background: #0000007a;
   min-height: 100vh !important; /* or your site background */
 }
 
 .contact-section {
-  background: linear-gradient(to bottom, #000000, #ffffff41);
-  color: #ffffff;
+  background: linear-gradient(to bottom, #e4e4e4, #0000007a);
+  color: #353535;
   padding: 60px 20px;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ body {
 
 .contact-container p {
   font-size: 14px;
-  color: #cccccc;
+  color: #0000007a;
   margin-bottom: 30px;
 }
 
@@ -49,15 +49,15 @@ form textarea {
   border-radius: 8px;
   font-family: 'Michroma', sans-serif;
   font-size: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.53);
+  color: #000000;
   outline: none;
   transition: background 0.3s;
 }
 
 form input:focus,
 form textarea:focus {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(221, 221, 221, 0.596);
 }
 
 textarea {
