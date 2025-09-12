@@ -6,10 +6,10 @@
       background: linear-gradient(to bottom, #ffffff, #04546c9b);
     }
 
-    .intro {
+    .intro {  
       padding: 60px 20px;
       text-align: center;
-      background: #111;
+      background: linear-gradient(to bottom, #89e0fa9b, #ffffff);
       color: #fff;
     }
 
