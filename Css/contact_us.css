@@ -91,3 +91,22 @@ body > *:last-child {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+
+/* Mobile Overrides */
+@media (max-width: 480px) {
+  .contact-container h2 {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  .contact-section {
+    padding: 40px 15px;
+  }
+  form input, form textarea {
+    padding: 12px;
+    font-size: 11px;
+  }
+  button {
+    padding: 12px 24px;
+    font-size: 12px;
+  }
+}

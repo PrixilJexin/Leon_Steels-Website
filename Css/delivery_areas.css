@@ -109,3 +109,36 @@
   color: #ffd700;
   font-weight: 600;
 }
+
+/* Mobile Responsiveness Overrides */
+@media (max-width: 768px) {
+  .delivery-areas {
+    padding: 2.5rem 1rem;
+  }
+  .delivery-title {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+  .delivery-intro p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+  .delivery-list {
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+  }
+  .highlight-delivery {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem auto;
+  }
+  .highlight-title {
+    font-size: 1.3rem;
+  }
+  .highlight-delivery p {
+    font-size: 0.9rem;
+  }
+  .map-container {
+    margin-top: 1.5rem;
+    padding-top: 75%; /* Adjust ratio for mobile aspect ratio */
+  }
+}

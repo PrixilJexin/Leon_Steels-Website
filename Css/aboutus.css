@@ -81,6 +81,8 @@ html, body {
   .about-section {
     flex-direction: column;
     text-align: center;
+    margin-top: 0;
+    padding-top: 80px;
   }
   .about-overlay {
     text-align: center;

@@ -46,3 +46,37 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
+
+// Add touch/swipe support for mobile carousel
+if (track) {
+  let startX = 0;
+  let isDragging = false;
+
+  track.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  }, { passive: true });
+
+  track.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const currentX = e.touches[0].clientX;
+    const diffX = startX - currentX;
+    
+    // If swipe is significant (more than 50px)
+    if (Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        // swipe left -> next slide
+        index = (index + 1) % total;
+      } else {
+        // swipe right -> prev slide
+        index = (index - 1 + total) % total;
+      }
+      track.style.transform = `translateX(-${index * 100}%)`;
+      isDragging = false;
+    }
+  }, { passive: true });
+
+  track.addEventListener('touchend', () => {
+    isDragging = false;
+  }, { passive: true });
+}

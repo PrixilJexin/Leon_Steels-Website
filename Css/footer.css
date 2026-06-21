@@ -87,3 +87,21 @@
     gap: 1rem;
   }
 }
+
+/* Mobile Responsiveness overrides for footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+  .footer-container {
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .footer-logo, .footer-service {
+    text-align: center;
+  }
+  .footer-links ul {
+    display: inline-block;
+    text-align: center;
+  }
+}

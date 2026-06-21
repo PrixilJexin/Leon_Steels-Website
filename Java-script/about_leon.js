@@ -1,6 +1,4 @@
-import gsap from "https://cdn.skypack.dev/gsap@3.12.2";
-import ScrollTrigger from "https://cdn.skypack.dev/gsap@3.12.2/ScrollTrigger";
-
+// Use global gsap:
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to("#about-leon .about-container", {

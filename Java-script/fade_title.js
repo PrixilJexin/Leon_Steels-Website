@@ -1,8 +1,4 @@
-// Remove imports:
-import { gsap } from 'https://cdn.skypack.dev/gsap';
-import { ScrollTrigger } from 'https://cdn.skypack.dev/gsap@3.11.3/ScrollTrigger';
-
-// Instead, use global gsap:
+// Use global gsap:
 gsap.registerPlugin(ScrollTrigger);
 
 // Your GSAP animation code below:

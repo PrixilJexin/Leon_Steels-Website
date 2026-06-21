@@ -109,3 +109,49 @@
   color: #ffffff;
   transform: translateY(-3px);
 }
+
+/* Mobile Responsiveness Overrides */
+@media (max-width: 768px) {
+  .tmt-bars-section {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-top: 40px;
+  }
+  .brands-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  .brand-card {
+    padding: 1rem;
+  }
+  .brand-card img {
+    height: 180px;
+  }
+  .tmt-description-section {
+    padding: 3rem 1rem;
+  }
+  .tmt-description-title {
+    font-size: 1.5rem;
+  }
+  .tmt-description-text {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  .tmt-contact-cta {
+    padding: 2.5rem 1rem;
+  }
+  .tmt-contact-title {
+    font-size: 1.3rem;
+  }
+  .tmt-contact-text {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  .tmt-contact-button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
